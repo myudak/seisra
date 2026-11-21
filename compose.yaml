@@ -77,7 +77,7 @@ services:
       redis: { condition: service_healthy }
       mongodb: { condition: service_healthy }
     healthcheck:
-      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8003/api/health')\""]
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8003/')\""]
       interval: 15s
       retries: 10
 

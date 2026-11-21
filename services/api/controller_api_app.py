@@ -18,10 +18,8 @@ class Server(uvicorn.Server):
 
 async def app():
     "Run scheduler and the API"
-    server = Server(config=uvicorn.Config(app_fastapi, 
-                                          workers=32, 
-                                          reload=True, 
-                                          loop="asyncio", 
+    server = Server(config=uvicorn.Config(app_fastapi,
+                                          loop="asyncio",
                                           host="0.0.0.0", 
                                           port=8003))
 

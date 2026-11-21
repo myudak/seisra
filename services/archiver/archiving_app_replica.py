@@ -148,8 +148,13 @@ async def get_data_from_redis():
     now = datetime.now()
     if regional:
         user_data = db["user"].find_one({"username": regional})
-        station_ids = user_data["stations"]
-        station_datas = [db["station"].find_one({'_id': ObjectId(station_id)}) for station_id in station_ids]
+        if user_data is None or not user_data.get("stations"):
+            # Same fallback as the seedlink scheduler: archive every station.
+            print(f"Regional user '{regional}' not found or has no stations, archiving all stations")
+            station_datas = list(db["station"].find({}))
+        else:
+            station_ids = user_data["stations"]
+            station_datas = [db["station"].find_one({'_id': ObjectId(station_id)}) for station_id in station_ids]
 
         df_database_station = pd.DataFrame(station_datas)
         print(df_database_station)
