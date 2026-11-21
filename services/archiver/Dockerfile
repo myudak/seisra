@@ -1,0 +1,38 @@
+FROM python:3.10-slim-bullseye
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Disable OpenBLAS threading to avoid pthread_create failures in nested containers
+ENV OPENBLAS_NUM_THREADS=1
+# Use non-interactive matplotlib backend to avoid thread creation in FontManager
+ENV MPLBACKEND=Agg
+
+# Copy the dependencies file to the working directory
+COPY ./requirement.txt /app/requirement.txt
+
+# Install dependencies
+RUN pip install -r requirement.txt --progress-bar off
+
+# Prepare cronjob (skip packages that are 404 in bullseye security repo)
+RUN apt-get update && \
+    (apt-get install -y procps || true) && \
+    mkdir -p /etc/cron.d
+
+# Copy other files
+COPY . .
+
+# Add chmod and mkdir logs
+RUN chmod 644 ./crontab && \
+    mkdir -p /etc/cron.d && \
+    cp ./crontab /etc/cron.d/crontab && \
+    chmod +x /app/start_archiving.sh && \
+    mkdir -p /app/logs/ && \
+    touch /app/logs/archiving.log || true
+
+# Create an entrypoint script
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod 0755 /app/entrypoint.sh
+
+# Command to run on container start
+ENTRYPOINT ["/app/entrypoint.sh"]

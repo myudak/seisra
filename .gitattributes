@@ -1,0 +1,8 @@
+# Linux containers need LF, also when the repo is checked out on Windows.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.h5 binary
+*.joblib binary
+*.gz binary
+*.png binary
+*.webp binary

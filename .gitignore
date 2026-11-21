@@ -1,0 +1,30 @@
+# secrets and local config
+.env
+.env.*
+!.env.example
+!**/.env.example
+!web/.env.campus.example
+*.credential.xml
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# node / web
+node_modules/
+dist/
+dist-preview/
+
+# runtime data
+logs/
+*.log
+archive/
+.local-dev/
+
+# editors / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json

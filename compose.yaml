@@ -1,0 +1,181 @@
+# Lindu — the whole system in one Compose project.
+#
+#   cp .env.example .env        # then edit .env
+#   docker compose up -d --build
+#
+# Open http://localhost:8080 (WEB_PORT). Everything else stays on the internal
+# network; the web container proxies /api, /record-api, /socket.io and /ws*.
+# Profiles let you start parts: `docker compose --profile core up` (no AI).
+
+name: lindu
+
+x-service: &service
+  env_file: .env
+  restart: unless-stopped
+  init: true
+  logging:
+    driver: json-file
+    options: { max-size: "50m", max-file: "3" }
+
+x-ai: &ai
+  <<: *service
+  environment:
+    OPENBLAS_NUM_THREADS: "1"
+    OMP_NUM_THREADS: "1"
+    TF_CPP_MIN_LOG_LEVEL: "3"
+    CUDA_VISIBLE_DEVICES: "-1"
+  profiles: [ai, all]
+
+services:
+  # ---------------------------------------------------------------- infra
+  kafka:
+    image: apache/kafka:3.7.1
+    restart: unless-stopped
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_LOG_RETENTION_HOURS: 24
+      KAFKA_HEAP_OPTS: "-Xms512m -Xmx1g"
+    volumes: [kafka-data:/var/lib/kafka/data]
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/kafka/bin/kafka-broker-api-versions.sh --bootstrap-server localhost:9092 >/dev/null 2>&1"]
+      interval: 10s
+      retries: 12
+
+  redis:
+    image: redis:7.2.5-alpine
+    restart: unless-stopped
+    command: redis-server --save "" --appendonly no --maxmemory 512mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+
+  mongodb:
+    image: mongo:4.4
+    restart: unless-stopped
+    volumes: [mongo-data:/data/db]
+    healthcheck:
+      test: ["CMD", "mongo", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      retries: 12
+
+  # -------------------------------------------------------------- backend
+  api:
+    <<: *service
+    build: ./services/api
+    depends_on: &infra
+      kafka: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      mongodb: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8003/api/health')\""]
+      interval: 15s
+      retries: 10
+
+  ws-general:
+    <<: *service
+    build: { context: ./services/api, dockerfile: Dockerfile_general }
+    depends_on: *infra
+
+  ws-waveform:
+    <<: *service
+    build: { context: ./services/api, dockerfile: Dockerfile_waveform }
+    depends_on: *infra
+
+  record-stream:
+    <<: *service
+    build: ./services/record-stream
+    volumes: ["${ARCHIVE_PATH:-archive}:/archive"]
+    depends_on: *infra
+
+  seedlink:
+    <<: *service
+    build: ./services/seedlink
+    volumes: ["/var/run/docker.sock:/var/run/docker.sock:ro"]   # reads its own replica number
+    deploy: { replicas: "${seedlink_replica_count:-2}" }
+    depends_on: *infra
+
+  archiver:
+    <<: *service
+    build: ./services/archiver
+    volumes: ["${ARCHIVE_PATH:-archive}:/archive", "/var/run/docker.sock:/var/run/docker.sock:ro"]
+    deploy: { replicas: "${archive_replica_count:-3}" }
+    depends_on: *infra
+
+  fdsn:
+    <<: *service
+    build: ./services/fdsn
+    volumes: ["${ARCHIVE_PATH:-archive}:/archive"]
+    depends_on: *infra
+
+  fdsn-api:
+    <<: *service
+    build: { context: ./services/fdsn, dockerfile: Dockerfile_API }
+    volumes: ["${ARCHIVE_PATH:-archive}:/archive"]
+    ports: ["${FDSN_API_PORT:-38002}:8002"]
+    depends_on: *infra
+
+  public-api:
+    <<: *service
+    build: ./services/public-api
+    ports: ["${PUBLIC_API_PORT:-38007}:8007"]
+    depends_on: *infra
+
+  flusher:
+    <<: *service
+    build: ./services/flusher
+    depends_on: *infra
+
+  # ------------------------------------------------------------------- AI
+  p-pick:
+    <<: *ai
+    build: ./ai/p-pick/service
+    deploy: { replicas: "${p_pick_replicas:-2}", resources: { limits: { memory: 2G } } }
+
+  p-pick-lb:
+    <<: *service
+    build: ./ai/p-pick/nginx
+    depends_on: [p-pick]
+    profiles: [ai, all]
+
+  p-pick-consumer:
+    <<: *ai
+    build: ./ai/p-pick/consumer
+    environment: { nginx_host: p-pick-lb, nginx_port: "80", OPENBLAS_NUM_THREADS: "1" }
+    depends_on: [p-pick-lb, kafka]
+
+  phase-arrival:
+    <<: *ai
+    build: ./ai/phase-arrival
+    depends_on: [kafka]
+
+  association:
+    <<: *ai
+    build: ./ai/association
+    depends_on: [kafka]
+
+  locmag:
+    <<: *ai
+    build: ./ai/locmag
+    depends_on: [kafka]
+
+  # ------------------------------------------------------------------ web
+  web:
+    build: ./web
+    restart: unless-stopped
+    ports: ["${WEB_PORT:-8080}:80"]
+    depends_on: [api, ws-general, ws-waveform, record-stream]
+
+volumes:
+  kafka-data:
+  mongo-data:
+  archive:

@@ -1,0 +1,157 @@
+name,code,network,channel,location,longitude,latitude,elevation,server_seedlink,server_fdsn
+"Drachenhoehle, Syrau",SYRAU,1D,"['HHN', 'HHZ']",,12.08337,50.54217,469.0,geofon.gfz-potsdam.de:18000,GFZ
+"Wiedersberg, Triebel",WBERG,1D,"['HHE', 'HHZ']",,11.999245,50.364212,476.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer OBS, Antarctica",VNA1,AW,"['BHN', 'BHZ']",,-8.29,-70.672,55.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array Centre, Antarctica",VNA2,AW,"['BHN', 'BHZ']",,-7.393,-70.925,442.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Olymp, Antarctica",VNA3,AW,"['BHE', 'BHN', 'BHZ']",,-9.664,-71.242,566.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array A1, Antarctica",VNAA1,AW,['SHZ'],,-7.3929,-70.92398,395.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array A2, Antarctica",VNAA2,AW,['SHZ'],,-7.38784,-70.92644,389.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array A3, Antarctica",VNAA3,AW,['SHZ'],,-7.39787,-70.92616,383.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array B1, Antarctica",VNAB1,AW,['SHZ'],,-7.38615,-70.92207,386.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array B2, Antarctica",VNAB2,AW,['SHZ'],,-7.381775,-70.92657,388.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array B3, Antarctica",VNAB3,AW,['SHZ'],,-7.3927,-70.92768,383.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array B4, Antarctica",VNAB4,AW,['SHZ'],,-7.40419,-70.92656,388.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array B5, Antarctica",VNAB5,AW,['SHZ'],,-7.40007,-70.92225,394.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array C1, Antarctica",VNAC1,AW,['SHZ'],,-7.38311,-70.91771,388.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array C2, Antarctica",VNAC2,AW,['SHZ'],,-7.36828,-70.9232,389.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array C3, Antarctica",VNAC3,AW,['SHZ'],,-7.37237,-70.93019,388.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array C4, Antarctica",VNAC4,AW,['SHZ'],,-7.39173,-70.93359,380.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array C5, Antarctica",VNAC5,AW,['SHZ'],,-7.41213,-70.93085,382.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array C6, Antarctica",VNAC6,AW,['SHZ'],,-7.41822,-70.92389,388.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Neumayer Watz-Array C7, Antarctica",VNAC7,AW,['SHZ'],,-7.40516,-70.91805,395.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Patache, Chile",PATCX,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-70.15288,-20.82071,832.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Huatacondo, Chile",PB01,CX,"['BHE', 'BHN', 'BHZ', 'HHN', 'HHZ']",,-69.4874,-21.04323,900.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Salar Grande, Chile",PB02,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-69.89603,-21.31973,1015.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station El Tigre, Chile",PB03,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-69.7531,-22.04847,1460.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Pedro de Valdivia, Chile",PB06,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-69.57188,-22.7058,1440.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Cerro Tatas, Chile",PB07,CX,"['BHE', 'BHN', 'HHE', 'HHN', 'HHZ']",,-69.88618,-21.72667,1570.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Macaya, Chile",PB08,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-69.1534,-20.14112,3060.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Quillagua, Chile",PB09,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-69.24192,-21.79638,1530.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Juan Lopez, Chile",PB10,CX,"['BHE', 'BHN', 'HHE', 'HHN', 'HHZ']",,-70.55408,-23.51343,250.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Cerro Caramaca near Arica, Chile",PB12,CX,"['BHE', 'BHN', 'BHZ', 'HHN', 'HHZ']",,-70.32809,-18.61406,908.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Sierra Gorda, Chile",PB15,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-69.47092,-23.208335,1830.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Cerro Chaquipina new, Chile",PB16,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-69.50767,-18.3351,4480.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Visviri, Chile",PB18,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-69.48,-17.58954,4155.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Pico de Oro, Chile",PB19,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-69.290647,-23.90478,2480.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Lequena, Chile",PB20,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-68.8415,-21.619067,4280.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Mantos de la Luna, Chile",PB21,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-70.084826,-22.314808,1533.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Michilla, Chile",PB22,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-70.23927,-22.92962,1049.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Quebrada Aricilda, Chile",PB23,CX,"['BHE', 'BHN', 'BHZ', 'HHN']",,-69.63808,-19.73957,1416.0,geofon.gfz-potsdam.de:18000,GFZ
+"IPOC Station Pisagua, Chile",PSGCX,CX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-70.12305,-19.59717,966.0,geofon.gfz-potsdam.de:18000,GFZ
+Dobruska/Polom,DPC,CZ,"['HHE', 'HHN', 'HHZ']",,16.3222,50.3502,748.0,geofon.gfz-potsdam.de:18000,GFZ
+"Geodeticka observator Pecny, Ondrejov",GOPC,CZ,"['HHE', 'HHN', 'HHZ']",,14.787,49.914,545.0,geofon.gfz-potsdam.de:18000,GFZ
+Kasperske Hory,KHC,CZ,"['HHE', 'HHN', 'HHZ']",,13.5782,49.1309,700.0,geofon.gfz-potsdam.de:18000,GFZ
+Klet,KLEC,CZ,"['HHE', 'HHZ']",,14.2846,48.864,1121.0,geofon.gfz-potsdam.de:18000,GFZ
+Kraliky,KRLC,CZ,"['HHE', 'HHN']",,16.8341,50.0966,614.0,geofon.gfz-potsdam.de:18000,GFZ
+Maruska,MAUC,CZ,"['HHE', 'HHN', 'HHZ']",,17.8278,49.3655,659.0,geofon.gfz-potsdam.de:18000,GFZ
+Ostrava/Krasne Pole,OKC,CZ,"['HHE', 'HHN', 'HHZ']",,18.14,49.8346,250.0,geofon.gfz-potsdam.de:18000,GFZ
+Pribram,PBCC,CZ,"['BHE', 'BHN', 'BHZ']",,13.9953,49.6856,465.0,geofon.gfz-potsdam.de:18000,GFZ
+Primda,PRIC,CZ,"['HHE', 'HHN', 'HHZ']",,12.6782,49.6693,740.0,geofon.gfz-potsdam.de:18000,GFZ
+Pruhonice,PRU,CZ,"['HHE', 'HHN', 'HHZ']",,14.5417,49.9883,302.0,geofon.gfz-potsdam.de:18000,GFZ
+Panska Ves,PVCC,CZ,"['HHE', 'HHN', 'HHZ']",,14.5689,50.5282,311.0,geofon.gfz-potsdam.de:18000,GFZ
+Skalice,SKAC,CZ,"['HHE', 'HHN', 'HHZ']",,14.1357,50.5678,349.0,geofon.gfz-potsdam.de:18000,GFZ
+Trest,TREC,CZ,"['HHE', 'HHN', 'HHZ']",,15.4871,49.2948,559.0,geofon.gfz-potsdam.de:18000,GFZ
+Upice,UPC,CZ,"['HHE', 'HHN', 'HHZ']",,16.0121,50.5074,416.0,geofon.gfz-potsdam.de:18000,GFZ
+Zvikov,ZVC,CZ,"['HHE', 'HHZ']",,14.192163,49.4386,373.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Gøttrup, Denmark",GOET,DK,"['HHE', 'HHN', 'HHZ']",,9.225,57.035,5.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Ivigtut, Greenland",IVI,DK,"['HHE', 'HHZ']",,-48.1833,61.2,20.0,geofon.gfz-potsdam.de:18000,GFZ
+"Nuugaatsiq, Greenland",NUUG,DK,"['HHE', 'HHN', 'HHZ']",,-53.19958,71.53838,36.0,geofon.gfz-potsdam.de:18000,GFZ
+"EGT Station Arbavere, Estonia",ARBE,EE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,25.9841,59.4365,71.0,geofon.gfz-potsdam.de:18000,GFZ
+"EGT Station Soera, Hiiumaa, Estonia",EE06,EE,"['HHE', 'HHZ']",D0,22.8482,58.9695,6.0,geofon.gfz-potsdam.de:18000,GFZ
+"EGT Station Matsalu, Estonia",MTSE,EE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHZ', 'SHE', 'SHN', 'SHZ']",,23.8146,58.7144,3.0,geofon.gfz-potsdam.de:18000,GFZ
+"DIAS Station Inch Island, Ireland",IDGL,EI,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-7.51,55.073,123.0,geofon.gfz-potsdam.de:18000,GFZ
+"DIAS Station Glengowla, Ireland",IGLA,EI,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-9.375,53.4195,31.0,geofon.gfz-potsdam.de:18000,GFZ
+Coolroe East,IMAC,EI,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-9.070097,51.845801,92.0,geofon.gfz-potsdam.de:18000,GFZ
+"DIAS Station Moygownagh, Co. Mayo, Ireland",IMAY,EI,"['BHE', 'BHN', 'BHZ', 'HHN']",,-9.379588,54.160742,117.0,geofon.gfz-potsdam.de:18000,GFZ
+Mitchelstown Cave,IMIC,EI,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-8.1079,52.3038,110.0,geofon.gfz-potsdam.de:18000,GFZ
+Cappanamuck,ITIP,EI,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-8.079468,53.046278,60.0,geofon.gfz-potsdam.de:18000,GFZ
+"DIAS Station Carrickbyrne, Ireland",IWEX,EI,"['BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-6.7745,52.3743,180.0,geofon.gfz-potsdam.de:18000,GFZ
+"SGO Station Kolari, Finland",KLF,FN,"['BHE', 'BHN', 'BHZ', 'HHN', 'HHZ']",00,23.964,67.2347,209.2,geofon.gfz-potsdam.de:18000,GFZ
+"SGO Station Inari, Kaamanen, Finland",KMNF,FN,"['BHE', 'BHZ', 'HHE', 'HHN', 'HHZ']",00,26.99611,69.14895,246.0,geofon.gfz-potsdam.de:18000,GFZ
+"SGO Station Kuusamo, Maaselka, Finland",MSF,FN,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,29.04019,65.91131,365.0,geofon.gfz-potsdam.de:18000,GFZ
+"SGO Station Kuusamo, Oulanka, Finland",OLKF,FN,"['BHE', 'BHZ', 'HHE', 'HHN', 'HHZ']",00,29.4003,66.3206,315.0,geofon.gfz-potsdam.de:18000,GFZ
+"SGO Station Inari, Raja-jooseppi, Finland",RAJF,FN,"['BHE', 'BHZ', 'HHE', 'HHN', 'HHZ']",00,28.31099,68.47512,238.4,geofon.gfz-potsdam.de:18000,GFZ
+"SGO Station Ranua, Palovaara, Finland",RANF,FN,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",00,26.7886,66.0147,190.0,geofon.gfz-potsdam.de:18000,GFZ
+"SGO Station Rovaniemi, Finland",RNF,FN,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,26.01074,66.61216,171.0,geofon.gfz-potsdam.de:18000,GFZ
+"SGO Station Sodankyla, Finland",SGF,FN,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,26.52611,67.44211,180.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/GGSA Station Accra, Ghana",ACRG,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",D0,-0.207117,5.641485,75.0,geofon.gfz-potsdam.de:18000,GFZ
+"NOA/GEOFON Station Apeiranthos, Naxos, Greece",APE,GE,"['BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,25.52301,37.07274,608.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/KOERI/MedNet Station Arapgir, Turkey",ARPR,GE,"['BHZ', 'SHE', 'SHZ']",,38.33557,39.09289,1537.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/JSO/DESERVE Station Balqa, Jordan",BALJ,GE,"['BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,35.64,32.0873,375.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/INETER Station Boaco, Nicaragua",BOAB,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",D0,-85.6659,12.4493,381.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/GSD Station Mathiatis, Cyprus",CSS,GE,"['BHE', 'BHZ', 'SHE', 'SHN', 'SHZ']",,33.331,34.9611,396.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/SVOSC Station Dhamar, Yemen",DAMY,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,44.3869,14.5613,2488.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/DIAS Station Dublin, Ireland",DSB,GE,"['BHN', 'BHZ', 'HHE', 'HHN']",,-6.3762,53.2452,236.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/GSI Station Eilat, Israel",EIL,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ', 'SHE', 'SHN', 'SHZ']",,34.9512,29.6699,210.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON Station Flechtingen, Germany",FLT1,GE,"['BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,11.2372,52.3306,100.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/JSO/DESERVE Station Ghor Haditha, Jordan",GHAJ,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,35.56648,31.30341,-58.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/GSMB Station Hakmana, Sri Lanka",HALK,GE,"['BHN', 'BHZ', 'SHN', 'SHZ']",,80.6806,6.0877,120.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/CAU Station Helgoland, Germany",HLG,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",D0,7.883014,54.183092,37.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/MMS Station Hanimaadhoo, Maldives",HMDM,GE,"['BHE', 'BHN', 'SHE', 'SHZ']",00,73.18216,6.77314,1.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/DIAS Station Belurgan, Co Louth, Ireland",ILTH,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-6.3362,54.0279,21.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/KOERI/MedNet Station Isparta, Turkey",ISP,GE,"['BHE', 'BHN', 'BHZ', 'SHE', 'SHN', 'SHZ']",,30.5093,37.8433,1100.0,geofon.gfz-potsdam.de:18000,GFZ
+"NOA/RUB/GEOFON Station Karpathos, Greece",KARP,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN']",,27.16106,35.5471,524.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/KU Station Kabul, Afghanistan",KBU,GE,"['BHE', 'BHZ', 'SHE', 'SHN', 'SHZ']",,69.1347,34.5151,1820.0,geofon.gfz-potsdam.de:18000,GFZ
+"RUB/GEOFON Station Keramoti, Crete, Greece",KERA,GE,"['BHE', 'BHN', 'BHZ', 'HHN', 'HHZ']",,23.5577,35.3692,240.0,geofon.gfz-potsdam.de:18000,GFZ
+"NOA/GEOFON Station Kythira, Greece",KTHA,GE,"['BHE', 'BHN', 'BHZ', 'HHN', 'HHZ']",,23.0621,36.2566,360.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/UONBI/KMD Station Lodwar, Kenya",LODK,GE,"['BHE', 'BHN', 'BHZ', 'SHE', 'SHN', 'SHZ']",,35.36165,3.42195,665.0,geofon.gfz-potsdam.de:18000,GFZ
+"USGS/GEOFON/CSN Station Limon Verde, Chile",LVC,GE,"['BHE', 'BHN', 'BHZ', 'SHE', 'SHN', 'SHZ']",,-68.9111,-22.6127,2960.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/IMAA-CNR Station Tramutola, Italy",MARCO,GE,"['BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,15.80632,40.29724,933.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/UNIBAS/ASI Station Matera, Italy",MATE,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,16.70442,40.64907,494.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/IPE Station Moravsky Beroun, Czech Republic",MORC,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN']",,17.5428,49.7766,740.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/GSI/DESERVE Station Mazada, Israel",MSBI,GE,"['BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,35.358,31.3126,-220.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/IPMA Station Manteigas, Portugal",MTE,GE,"['BHE', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-7.5442,40.3997,815.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/DMH Station Naypyitaw, Myanmar",NPW,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,96.1376,19.7785,158.0,geofon.gfz-potsdam.de:18000,GFZ
+"LGT/GEOFON Station Paberze, Lithuania",PABE,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,23.96796,55.50523,58.0,geofon.gfz-potsdam.de:18000,GFZ
+"LGT/GEOFON Station Paburge, Lithuania",PBUR,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,21.92945,56.02361,126.0,geofon.gfz-potsdam.de:18000,GFZ
+"GKKI/GEOFON Station Piszkes, Hungary",PSZ,GE,"['BHZ', 'HHE', 'HHN', 'HHZ', 'SHE', 'SHN', 'SHZ']",,19.89440001,47.91840001,940.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON Station Pulkovo, Russia",PUL,GE,"['BHE', 'BHN', 'BHZ']",,30.317,59.767,65.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/BGR/GRSN Station Ruegen, Germany",RGN,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN']",,13.3214,54.5477,15.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/GRSN Station Ruedersdorf, Germany",RUE,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN']",,13.78,52.4759,40.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/NAJAH/DESERVE Station Salfit, Palestine Territories",SALP,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,35.1914,32.0686,475.0,geofon.gfz-potsdam.de:18000,GFZ
+"NOA/GEOFON Station Santorini, Greece",SANT,GE,"['BHE', 'BHN', 'SHE', 'SHN', 'SHZ']",,25.45926,36.37052,591.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/LEGMA Station Slitere, Latvia",SLIT,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,22.2905,57.6287,15.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/AWI Station Sanae, Antarctica",SNAA,GE,"['BHE', 'BHN', 'HHE', 'HHN', 'HHZ']",,-2.8379,-71.6707,846.0,geofon.gfz-potsdam.de:18000,GFZ
+"NOA/GEOFON Station Santorini, Greece",THERA,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,25.475263,36.366992,288.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/NAJAH/DESERVE Station Al Uja, Palestine Territories",UJAP,GE,"['BHE', 'BHN', 'BHZ', 'HHN', 'HHZ']",,35.46435,31.95201,-200.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/IOGA Station Vohitsoka, Madagascar",VOI,GE,"['BHE', 'BHN', 'BHZ', 'SHE', 'SHN', 'SHZ']",,46.79327,-21.90648,1158.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/EGT Station Vasula, Estonia",VSU,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHZ', 'SHE', 'SHN', 'SHZ']",,26.7347,58.462,63.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/GSN Station Windhoek, Namibia",WIN,GE,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN']",,17.0915,-22.5691,1720.0,geofon.gfz-potsdam.de:18000,GFZ
+"GEOFON/ECGS Station Walferdange, Luxembourg",WLF,GE,"['BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,6.1526,49.6646,295.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station BALKA, Afghanistan",BALKA,GX,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,67.189372,36.73423,366.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Hetta, Finland",HEF,HE,"['HHE', 'HHN', 'HHZ']",,23.6643,68.4062,380.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Hattuvaara, Finland",JOF,HE,"['HHE', 'HHN', 'HHZ']",,31.3092,62.9187,180.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Kangasniemi, Finland",KAF,HE,"['HHE', 'HHN', 'HHZ']",,26.3061,62.1115,195.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Keuruu, Finland",KEF,HE,"['HHN', 'HHZ']",,24.867,62.1667,215.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Kevo, Finland",KEV,HE,"['HHE', 'HHZ']",,27.00356,69.75651,81.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Kilpisjarvi, Finland",KIF,HE,"['HHE', 'HHN']",,20.804,69.0432,475.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Kankaanpaa, Finland",KPF,HE,"['HHE', 'HHN', 'HHZ']",,22.0704,61.8337,82.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Kuusamo, Finland",KU6,HE,"['HHE', 'HHN', 'HHZ']",,29.89067,66.02547,274.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Metsahovi, Finland",MEF,HE,"['HHE', 'HHN', 'HHZ']",,24.3958,60.2172,55.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Nilsia, Finland",NIF,HE,"['HHE', 'HHN', 'HHZ']",,27.810279,63.390016,199.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Oulainen, Finland",OUF,HE,"['HHN', 'HHZ']",,24.7314,64.3673,90.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Laitila, Finland",RAF,HE,"['HHE', 'HHN', 'HHZ']",,21.7646,61.0224,30.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Kuhmo, Finland",RMF,HE,"['HHE', 'HHN', 'HHZ']",,29.9318,64.2175,220.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Ruokolahti, Finland",RUF,HE,"['HHE', 'HHN']",,28.9497,61.4247,125.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Sumiainen, Finland",SUF,HE,"['HHE', 'HHN', 'HHZ']",,26.1474,62.7194,185.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Ylistaro, Finland",VAF,HE,"['HHE', 'HHN', 'HHZ']",,22.6683,63.0471,55.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Virolahti, Finland",VJF,HE,"['HHE', 'HHN', 'HHZ']",,27.555,60.5388,34.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Varrio, Finland",VRF,HE,"['HHE', 'HHN']",,29.609,67.748,350.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Piszkes-teto, Hungary",PSZI4,HN,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,19.89078,47.91831,941.547,geofon.gfz-potsdam.de:18000,GFZ
+"Station Amatzia, Israel",AMAZ,IS,"['BH1', 'BH2', 'BHZ', 'HH1', 'HH2', 'HHZ']",00,34.9154,31.5325,396.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Acoyapa, Nicaragua",ACON,NU,"['HHE', 'HHN', 'HHZ']",D0,-85.174,11.968,107.0,geofon.gfz-potsdam.de:18000,GFZ
+Hornsund,HSPB,PL,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,15.5332,77.0019,11.0,geofon.gfz-potsdam.de:18000,GFZ
+Ksiaz Poland,KSP,PL,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN']",,16.2931,50.8428,353.0,geofon.gfz-potsdam.de:18000,GFZ
+Kalwaria Paclawska,KWP,PL,"['BHE', 'BHN', 'BHZ', 'HHN', 'HHZ']",,22.7075,49.6314,448.0,geofon.gfz-potsdam.de:18000,GFZ
+Niedzica Poland,NIE,PL,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,20.2996,49.4182,645.0,geofon.gfz-potsdam.de:18000,GFZ
+Suwalki,SUW,PL,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,23.1808,54.0125,152.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Kolonicke sedlo, Slovakia",KOLS,SK,"['HHE', 'HHZ']",,22.2731,48.9333,460.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Liptovska Anna, Slovakia",LANS,SK,"['HHE', 'HHN', 'HHZ']",,19.4678,49.1505,710.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Modra-Piesok, Slovakia",MODS,SK,"['HHE', 'HHN', 'HHZ']",,17.277,48.373,520.0,geofon.gfz-potsdam.de:18000,GFZ
+Skalnate Pleso,SPC,SK,"['HHE', 'HHN', 'HHZ']",,20.2339,49.1894,1751.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Vyhne, Slovakia",VYHS,SK,"['HHE', 'HHN', 'HHZ']",,18.8361,48.494,480.0,geofon.gfz-potsdam.de:18000,GFZ
+"Station Tamra, Tunisia",TAMR,TT,"['BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,9.1091,37.0469,93.0,geofon.gfz-potsdam.de:18000,GFZ
+"ROA/UCM/GEOFON Station Cartagena, Spain",CART,WM,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",,-1.0012,37.5868,65.0,geofon.gfz-potsdam.de:18000,GFZ
+"ROA/UCM/GEOFON Station Mahon, Menorca, Spain",MAHO,WM,"['BHE', 'BHN', 'BHZ']",,4.2665,39.8959,15.0,geofon.gfz-potsdam.de:18000,GFZ
+"ROA/UCM/GEOFON Station San Fernando, Spain",SFS,WM,"['BHE', 'BHN', 'BHZ', 'HHE', 'HHN', 'HHZ']",10,-6.2055,36.4656,21.0,geofon.gfz-potsdam.de:18000,GFZ
+"ROA/UCM/GEOFON Station Tiouine, Morocco",TIO,WM,"['BHN', 'HHN', 'HHZ']",,-7.26167,30.9267,1335.0,geofon.gfz-potsdam.de:18000,GFZ
