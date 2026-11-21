@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/lindu.svg" />
+    <link rel="icon" type="image/svg+xml" href="/seisra.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lindu</title>
+    <title>Seisra</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -12,9 +12,9 @@
       // Apply the saved theme before the app loads to avoid a flash (see src/hooks/use-theme.ts).
       ;(function () {
         try {
-          var p = localStorage.getItem('lindu-theme') || 'system'
+          var p = localStorage.getItem('seisra-theme') || 'system'
           var dark = p === 'dark' || (p === 'system' && matchMedia('(prefers-color-scheme: dark)').matches)
-          document.documentElement.dataset.theme = dark ? 'lindu-dark' : 'lindu'
+          document.documentElement.dataset.theme = dark ? 'seisra-dark' : 'seisra'
         } catch (e) {}
       })()
     </script>

@@ -22,7 +22,7 @@ cd web && npm run dev:local           # http://127.0.0.1:5173, hot reload
 ```
 
 `dev:local` proxies `/api`, `/record-api`, `/socket.io` and `/ws*` to the stack's web
-container on port 8080. Set `LINDU_STACK_URL` to point it at another stack.
+container on port 8080. Set `SEISRA_STACK_URL` to point it at another stack.
 
 ## 3. Campus backend over SSH (Windows)
 

@@ -43,9 +43,9 @@ const { isPending, mutate: login } = useMutation({
     <div class="flex flex-1 items-center justify-center px-4 py-10">
       <div class="w-full max-w-[400px]">
         <div class="mb-8 flex flex-col items-center gap-3 text-center">
-          <img src="/lindu.svg" alt="" class="h-12 w-12 object-contain" />
+          <img src="/seisra.svg" alt="" class="h-12 w-12 object-contain" />
           <div>
-            <div class="text-xs font-semibold uppercase tracking-[0.18em] text-base-content/50">Lindu</div>
+            <div class="text-xs font-semibold uppercase tracking-[0.18em] text-base-content/50">Seisra</div>
             <h1 class="mt-1 text-2xl font-bold tracking-tight text-base-content">Masuk ke akun Anda</h1>
             <p class="mt-1 text-sm text-base-content/60">Pemantauan gempa dan jaringan seismik</p>
           </div>

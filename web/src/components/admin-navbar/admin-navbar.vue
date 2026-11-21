@@ -16,10 +16,10 @@ const filteredMenus = NAVBAR_MENUS.filter((menu) => menu.label !== 'Home')
   <header
     class="z-[1000] border-b border-base-300 bg-base-100/95 backdrop-blur supports-[backdrop-filter]:bg-base-100/80">
     <div class="flex h-14 items-center gap-4 px-4 md:px-6">
-      <RouterLink to="/" class="flex shrink-0 items-center gap-2.5" aria-label="Lindu beranda">
-        <img src="/lindu.svg" alt="" class="h-7 w-7 object-contain" />
+      <RouterLink to="/" class="flex shrink-0 items-center gap-2.5" aria-label="Seisra beranda">
+        <img src="/seisra.svg" alt="" class="h-7 w-7 object-contain" />
         <div class="leading-tight">
-          <div class="text-[15px] font-bold tracking-tight text-base-content">Lindu</div>
+          <div class="text-[15px] font-bold tracking-tight text-base-content">Seisra</div>
           <div class="hidden text-[10px] font-medium uppercase tracking-[0.14em] text-base-content/50 sm:block">
             Seismic Monitoring
           </div>

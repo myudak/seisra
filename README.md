@@ -1,10 +1,31 @@
-# Lindu
+# Seisra
 
-Earthquake monitoring for Indonesia. *Lindu* is an old Javanese word for earthquake.
+Seisra is an earthquake monitoring system for Indonesia.
 
-Lindu streams waveforms from seismic stations (SeedLink). AI models pick P-wave
+Seisra streams waveforms from seismic stations (SeedLink). AI models pick P-wave
 arrivals, associate them into events, and estimate location and magnitude. Operators
 follow all of it live in a web dashboard.
+
+![Seisra dashboard, dark theme](docs/screenshots/home-dark.webp)
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/events.webp" alt="Events map"><br><b>Events</b>: recent earthquakes on the map, by depth and magnitude</td>
+    <td width="50%"><img src="docs/screenshots/stations.webp" alt="Stations map"><br><b>Stations</b>: network status, recent picks, waveforms per station</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/trace.webp" alt="Live traces"><br><b>Trace</b>: live waveforms from every active station</td>
+    <td><img src="docs/screenshots/locator.webp" alt="Origin locator"><br><b>Origin Locator</b>: review location and magnitude, correct P/S picks</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/home-light.webp" alt="Dashboard, light theme"><br><b>Light theme</b>: follows the system setting, or toggle it</td>
+    <td><img src="docs/screenshots/config.webp" alt="Configuration"><br><b>Config</b>: operators, stations and the AI pipeline</td>
+  </tr>
+</table>
+
+<sub>Screenshots use the built-in preview data (<code>npm run dev:preview</code>), not a live network.</sub>
+
+## Layout
 
 ```
 web/        Vue 3 dashboard (Vite, Tailwind/DaisyUI, OpenLayers)

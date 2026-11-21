@@ -50,7 +50,7 @@ const router = createRouter({
 
 router.afterEach((to) => {
   const title = to.meta.title as string | undefined
-  document.title = title ? `${title} · Lindu` : 'Lindu'
+  document.title = title ? `${title} · Seisra` : 'Seisra'
 })
 
 export default router

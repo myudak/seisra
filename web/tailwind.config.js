@@ -28,10 +28,10 @@ export default {
   },
   plugins: [daisyui],
   daisyui: {
-    // `lindu` (light) and `lindu-dark`; `business` kept for side-by-side comparison.
+    // `seisra` (light) and `seisra-dark`; `business` kept for side-by-side comparison.
     themes: [
       {
-        lindu: {
+        seisra: {
           ...shape,
           primary: "#2f4e7e",
           "primary-content": "#ffffff",
@@ -56,7 +56,7 @@ export default {
         },
       },
       {
-        "lindu-dark": {
+        "seisra-dark": {
           ...shape,
           primary: "#7aa2e3",
           "primary-content": "#0b1220",
@@ -82,6 +82,6 @@ export default {
       },
       "business",
     ],
-    darkTheme: "lindu-dark",
+    darkTheme: "seisra-dark",
   },
 }

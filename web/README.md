@@ -1,6 +1,6 @@
-# Lindu web
+# Seisra web
 
-Vue 3 + TypeScript + Vite dashboard. Tailwind with DaisyUI themes `lindu` (light) and `lindu-dark`.
+Vue 3 + TypeScript + Vite dashboard. Tailwind with DaisyUI themes `seisra` (light) and `seisra-dark`.
 
 ```bash
 npm ci

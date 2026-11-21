@@ -177,7 +177,7 @@ body {
 
 /* ------------------------------------------------------------------ */
 /* Design layer: shared building blocks used across pages.             */
-/* Colours come from the DaisyUI theme (lindu / lindu-dark).     */
+/* Colours come from the DaisyUI theme (seisra / seisra-dark).     */
 /* ------------------------------------------------------------------ */
 
 @layer components {
@@ -302,7 +302,7 @@ body {
 
 /* Canvas colours read at draw time (see utils/theme-colors.ts). */
 :root,
-[data-theme='lindu'] {
+[data-theme='seisra'] {
   --wave-stroke: #0f766e;
   --wave-grid: rgba(15, 23, 42, 0.08);
   --wave-label: #334155;
@@ -311,7 +311,7 @@ body {
   --pick-generic: #b45309;
 }
 
-[data-theme='lindu-dark'],
+[data-theme='seisra-dark'],
 [data-theme='business'] {
   --wave-stroke: #75ecb8;
   --wave-grid: rgba(255, 255, 255, 0.08);

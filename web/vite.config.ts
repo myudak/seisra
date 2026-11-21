@@ -40,7 +40,7 @@ export default defineConfig(({ mode }) => ({
       proxy: Object.fromEntries(
         ["/api/v1", "/record-api", "/socket.io", "^/ws(event|picking|arrivalpick)(\\?|$)"].map((p) => [
           p,
-          { target: process.env.LINDU_STACK_URL ?? "http://127.0.0.1:8080", ws: true, changeOrigin: true },
+          { target: process.env.SEISRA_STACK_URL ?? "http://127.0.0.1:8080", ws: true, changeOrigin: true },
         ]),
       ),
     },

@@ -1,4 +1,4 @@
-# Lindu — the whole system in one Compose project.
+# Seisra — the whole system in one Compose project.
 #
 #   cp .env.example .env        # then edit .env
 #   docker compose up -d --build
@@ -7,7 +7,7 @@
 # network; the web container proxies /api, /record-api, /socket.io and /ws*.
 # Profiles let you start parts: `docker compose --profile core up` (no AI).
 
-name: lindu
+name: seisra
 
 x-service: &service
   env_file: .env

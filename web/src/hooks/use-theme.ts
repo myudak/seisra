@@ -3,8 +3,8 @@ import { computed, ref, watchEffect } from 'vue'
 
 export type ThemePreference = 'light' | 'dark' | 'system'
 
-export const THEME_STORAGE_KEY = 'lindu-theme'
-const THEMES = { light: 'lindu', dark: 'lindu-dark' } as const
+export const THEME_STORAGE_KEY = 'seisra-theme'
+const THEMES = { light: 'seisra', dark: 'seisra-dark' } as const
 
 const readPreference = (): ThemePreference => {
   try {

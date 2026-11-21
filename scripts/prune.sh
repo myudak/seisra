@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
-# Retention cleanup for a running Lindu stack. Run from the repo root, e.g. daily:
-#   0 3 * * *  cd /path/to/lindu && ./scripts/prune.sh >> prune.log 2>&1
+# Retention cleanup for a running Seisra stack. Run from the repo root, e.g. daily:
+#   0 3 * * *  cd /path/to/seisra && ./scripts/prune.sh >> prune.log 2>&1
 # Use --dry-run to only count what would be removed.
 # Container logs are already capped by compose.yaml (3 x 50 MB per service)
 # and Kafka keeps 24 h, so only the waveform archive and old picks need pruning.

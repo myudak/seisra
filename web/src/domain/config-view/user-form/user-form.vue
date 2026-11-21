@@ -55,7 +55,7 @@ function onSubmitForm() {
 <template>
   <div>
     <h3 class="text-lg font-semibold">{{ title }}</h3>
-    <p class="mb-5 mt-1 text-sm text-base-content/60">Data akun operator yang dapat masuk ke Lindu.</p>
+    <p class="mb-5 mt-1 text-sm text-base-content/60">Data akun operator yang dapat masuk ke Seisra.</p>
     <div class="flex flex-col gap-4">
       <Input v-model="username" label="Username" />
       <Input v-model="region" label="Wilayah" />

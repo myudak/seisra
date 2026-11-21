@@ -4,7 +4,7 @@ export const HOMEPAGE_MENUS = [
     icon: 'la-dot-circle',
     url: '/eq-view',
     live: true,
-    image: '/screenshots/eq-view.png',
+    image: '/screenshots/eq-view.webp',
     description: 'Pantau gempa terbaru secara langsung atau telusuri riwayat kejadian.'
   },
   {
@@ -13,7 +13,7 @@ export const HOMEPAGE_MENUS = [
     url: '/station-view',
     live: true,
     description: 'Kelola status jaringan stasiun dan lihat aktivitas terkini.',
-    image: '/screenshots/station-view.png'
+    image: '/screenshots/station-view.webp'
   },
   {
     label: 'Trace',
@@ -21,7 +21,7 @@ export const HOMEPAGE_MENUS = [
     url: '/trace-view',
     live: true,
     description: 'Pilih stasiun dan amati data gelombang seismik yang masuk secara real-time.',
-    image: '/screenshots/trace-view.png'
+    image: '/screenshots/trace-view.webp'
   },
   {
     label: 'Origin Locator',
@@ -29,7 +29,7 @@ export const HOMEPAGE_MENUS = [
     url: '/origin-locator-view/events',
     live: false,
     description: 'Analisis kejadian secara interaktif, koreksi fase, lalu commit hasilnya.',
-    image: '/screenshots/origin-locator-view.png'
+    image: '/screenshots/origin-locator-view.webp'
   },
   {
     label: 'Config',
@@ -37,6 +37,6 @@ export const HOMEPAGE_MENUS = [
     url: '/config/user',
     live: false,
     description: 'Kelola pengguna, stasiun, dan pipeline AI pendeteksi gempa.',
-    image: '/screenshots/config-view.png'
+    image: '/screenshots/config-view.webp'
   }
 ]
